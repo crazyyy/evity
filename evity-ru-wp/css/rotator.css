@@ -1,189 +1,242 @@
-.work-tabs{
-	
-}
+
 .our-work-tabs {
-	position: relative;
-	height: 320px;
-	width: 630px;
-	overflow: hidden;
+  position: relative;
+
+  overflow: hidden;
+
+  width: 630px;
+  height: 320px;
 }
-.work-tabs-block{
-	height: 270px;
+.work-tabs-block {
+  height: 270px;
 }
-.work-tabs-block>li{
-	z-index: 0;
-	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
-	filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
-	opacity: 0;
-	position: absolute;
-	bottom: 0;
-	left: 0;
+.work-tabs-block > li {
+  position: absolute;
+  z-index: 0;
+  bottom: 0;
+  left: 0;
+
+  opacity: 0;
+
+  -ms-filter: 'progid:DXImageTransform.Microsoft.Alpha(Opacity=0)';
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
 }
-.work-tabs-block>li.selected-tab{
-	-webkit-transition: all 600ms ease-out;
-	-moz-transition: all 600ms ease-out;
-	-ms-transition: all 600ms ease-out;
-	-o-transition: all 600ms ease-out;
-	transition: all 600ms ease-out;
-	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
-	filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
-	opacity: 1;
-	z-index: 5;
-	width: 100%;
-	height: 270px;
+.work-tabs-block > li.selected-tab {
+  z-index: 5;
+
+  width: 100%;
+  height: 270px;
+
+  -webkit-transition: all 600ms ease-out;
+     -moz-transition: all 600ms ease-out;
+      -ms-transition: all 600ms ease-out;
+       -o-transition: all 600ms ease-out;
+          transition: all 600ms ease-out;
+
+  opacity: 1;
+
+  -ms-filter: 'progid:DXImageTransform.Microsoft.Alpha(Opacity=100)';
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
 }
-.slider, .slider2, .slider3, .slider4{
-	width: 630px !important;
-	height: 270px;
-	position: absolute;
-	left: 0;
-	bottom: 0;
+.slider,
+.slider2,
+.slider3,
+.slider4 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+
+  width: 630px !important;
+  height: 270px;
 }
-.reviews{
-	width: 920px !important;
-	height: auto !important;
-	margin: auto !important;
+.reviews {
+  width: 920px !important;
+  height: auto !important;
+  margin: auto !important;
 }
-.customers{
-	width: 920px !important;
-	margin: auto !important;
+.customers {
+  width: 920px !important;
+  margin: auto !important;
 }
-.customers ul, .customers li,
-.reviews ul, .reviews li,
-.slider ul, .slider li,
-.slider2 ul, .slider2 li,
-.slider3 ul, .slider3 li,
-.slider4 ul, .slider4 li{
-	margin:0;
-	padding:0;
-	list-style:none;
-	}
-.slider li,.slider2 li,.slider3 li,.slider4 li{ 
-	/* 
-		define width and height of list item (slide)
-		entire slider area will adjust according to the parameters provided here
-	*/ 
-	width:330px;
-	height:270px;
-	overflow:hidden; 
-	}	
-.reviews li{
-	width:316px;
-	height:auto;
-	overflow:hidden; 
+.customers ul,
+.customers li,
+.reviews ul,
+.reviews li,
+.slider ul,
+.slider li,
+.slider2 ul,
+.slider2 li,
+.slider3 ul,
+.slider3 li,
+.slider4 ul,
+.slider4 li {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
 }
-.customers li{
-	width:240px;
-	height:125px;
-	overflow:hidden; 
+.slider li,
+.slider2 li,
+.slider3 li,
+.slider4 li {
+  overflow: hidden;
+  /*
+    define width and height of list item (slide)
+    entire slider area will adjust according to the parameters provided here
+  */
+
+  width: 330px;
+  height: 270px;
 }
-#nextBtn, 
-#nextBtn2, 
-#nextBtn3, 
-#nextBtn4{ 
-	left: 600px;
-	position: absolute;
-	top: -50px;
-	}	
-#nextBtn5{ 
-	left: 930px;
-	position: absolute;
-	top: 25px;
-	}
-#nextBtn6{ 
-	left: 930px;
-	position: absolute;
-	top: 30px;
-	}
+.reviews li {
+  overflow: hidden;
+
+  width: 316px;
+  height: auto;
+}
+.customers li {
+  overflow: hidden;
+
+  width: 240px;
+  height: 125px;
+}
+#nextBtn,
+#nextBtn2,
+#nextBtn3,
+#nextBtn4 {
+  position: absolute;
+  top: -50px;
+  left: 600px;
+}
+#nextBtn5 {
+  position: absolute;
+  top: 25px;
+  left: 930px;
+}
+#nextBtn6 {
+  position: absolute;
+  top: 30px;
+  left: 930px;
+}
 #prevBtn,
 #prevBtn2,
 #prevBtn3,
-#prevBtn4{
-	left: 569px;
-	position: absolute;
-	top: -50px;
+#prevBtn4 {
+  position: absolute;
+  top: -50px;
+  left: 569px;
 }
-#prevBtn5{
-	left: 909px;
-	position: absolute;
-	top: 25px;
+#prevBtn5 {
+  position: absolute;
+  top: 25px;
+  left: 909px;
 }
-#prevBtn6{
-	left: 909px;
-	position: absolute;
-	top: 30px;
+#prevBtn6 {
+  position: absolute;
+  top: 30px;
+  left: 909px;
 }
-#prevBtn a, #nextBtn a,
-#prevBtn2 a, #nextBtn2 a,
-#prevBtn3 a, #nextBtn3 a,
-#prevBtn4 a, #nextBtn4 a{  
-	display:block;
-	position:relative;
-	width:30px;
-	height:30px;
-	background:url(../images/arrows.png) no-repeat 0 0;	
-	}	
-#prevBtn5 a, #nextBtn5 a{  
-	display:block;
-	position:relative;
-	width:20px;
-	height:20px;
-	background:url(../images/arrows-2.png) no-repeat 0 0;	
-	}
-#prevBtn6 a, #nextBtn6 a{  
-	display:block;
-	position:relative;
-	width:20px;
-	height:20px;
-	background:url(../images/arrows-2.png) no-repeat 0 bottom;	
-	}
+#prevBtn a,
+#nextBtn a,
+#prevBtn2 a,
+#nextBtn2 a,
+#prevBtn3 a,
+#nextBtn3 a,
+#prevBtn4 a,
+#nextBtn4 a {
+  position: relative;
+
+  display: block;
+
+  width: 30px;
+  height: 30px;
+
+  background: url(../images/arrows.png) no-repeat 0 0;
+}
+#prevBtn5 a,
+#nextBtn5 a {
+  position: relative;
+
+  display: block;
+
+  width: 20px;
+  height: 20px;
+
+  background: url(../images/arrows-2.png) no-repeat 0 0;
+}
+#prevBtn6 a,
+#nextBtn6 a {
+  position: relative;
+
+  display: block;
+
+  width: 20px;
+  height: 20px;
+
+  background: url(../images/arrows-2.png) no-repeat 0 bottom;
+}
 #nextBtn a,
 #nextBtn2 a,
 #nextBtn3 a,
-#nextBtn4 a{ 
-	background:url(../images/arrows.png) no-repeat right 0;	
-	}	
-#nextBtn5 a{ 
-	background:url(../images/arrows-2.png) no-repeat right 0;	
-	}	
-#nextBtn6 a{ 
-	background:url(../images/arrows-2.png) no-repeat right bottom;	
-	}	
-#prevBtn a:hover, #nextBtn a:hover,
-#prevBtn2 a:hover, #nextBtn2 a:hover,
-#prevBtn3 a:hover, #nextBtn3 a:hover,
-#prevBtn4 a:hover, #nextBtn4 a:hover{  
-	display:block;
-	position:relative;
-	width:30px;
-	height:30px;
-	background:url(../images/arrows.png) no-repeat 0 bottom;	
-	}
-#prevBtn5 a:hover, #nextBtn5 a:hover{  
-	display:block;
-	position:relative;
-	width:20px;
-	height:20px;
-	background:url(../images/arrows-2.png) no-repeat 0 bottom;	
-	}	
-#prevBtn6 a:hover, #nextBtn6 a:hover{  
-	display:block;
-	position:relative;
-	width:20px;
-	height:20px;
-	background:url(../images/arrows-2.png) no-repeat 0 top;	
-	}	
+#nextBtn4 a {
+  background: url(../images/arrows.png) no-repeat right 0;
+}
+#nextBtn5 a {
+  background: url(../images/arrows-2.png) no-repeat right 0;
+}
+#nextBtn6 a {
+  background: url(../images/arrows-2.png) no-repeat right bottom;
+}
+#prevBtn a:hover,
+#nextBtn a:hover,
+#prevBtn2 a:hover,
+#nextBtn2 a:hover,
+#prevBtn3 a:hover,
+#nextBtn3 a:hover,
+#prevBtn4 a:hover,
+#nextBtn4 a:hover {
+  position: relative;
+
+  display: block;
+
+  width: 30px;
+  height: 30px;
+
+  background: url(../images/arrows.png) no-repeat 0 bottom;
+}
+#prevBtn5 a:hover,
+#nextBtn5 a:hover {
+  position: relative;
+
+  display: block;
+
+  width: 20px;
+  height: 20px;
+
+  background: url(../images/arrows-2.png) no-repeat 0 bottom;
+}
+#prevBtn6 a:hover,
+#nextBtn6 a:hover {
+  position: relative;
+
+  display: block;
+
+  width: 20px;
+  height: 20px;
+
+  background: url(../images/arrows-2.png) no-repeat 0 top;
+}
 #nextBtn a:hover,
 #nextBtn2 a:hover,
 #nextBtn3 a:hover,
-#nextBtn4 a:hover{ 
-	background:url(../images/arrows.png) no-repeat right bottom;	
-	}	
-#nextBtn5 a:hover{ 
-	background:url(../images/arrows-2.png) no-repeat right bottom;	
-	}	
-#nextBtn6 a:hover{ 
-	background:url(../images/arrows-2.png) no-repeat right top;	
-	}	
-/* numeric controls */	
+#nextBtn4 a:hover {
+  background: url(../images/arrows.png) no-repeat right bottom;
+}
+#nextBtn5 a:hover {
+  background: url(../images/arrows-2.png) no-repeat right bottom;
+}
+#nextBtn6 a:hover {
+  background: url(../images/arrows-2.png) no-repeat right top;
+}
+/* numeric controls */
 /* // Easy Slider */

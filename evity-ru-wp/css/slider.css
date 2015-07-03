@@ -5,40 +5,43 @@
 *
 *  http://liquidslider.com
 *
-*  GPL license 
+*  GPL license
 *
 ************************************************************************/
 
 /******************************************************
 * No JavaScript
 * Use this to apply styles when Javascript is disabled,
-* and be sure to include the ".no-js" class in your html 
+* and be sure to include the ".no-js" class in your html
 * markup.
 *******************************************************/
 .no-js .liquid-slider {
-  height:350px;
-  overflow:scroll;
+  overflow: scroll;
+
+  height: 350px;
 }
 
 /******************************************************
 * Preloader
 * Use this to apply styles when Javascript is disabled,
-* and be sure to include the ".no-js" class in your html 
+* and be sure to include the ".no-js" class in your html
 * markup.
 *******************************************************/
-.liquid-slider-wrapper .liquid-slider-preloader {  
-  background: url(../img/loading.gif) #f2f2f2 no-repeat center 75px;
-  opacity:.90;
+.liquid-slider-wrapper .liquid-slider-preloader {
+  position: absolute;
+  top: 0;
+  left: 0;
   /* Do not edit below this line */
-  width:100%;
-  height:200%;
-  position:absolute;
-  top:0;
-  left:0;
+
+  width: 100%;
+  height: 200%;
+
+  opacity: .90;
+  background: url(../img/loading.gif) #f2f2f2 no-repeat center 75px;
 }
 
 /******************************************************************
-* Base Styles 
+* Base Styles
 * The styles here will apply to everything. I recommend you keep
 * the styles in here specific to mobile defices, then use
 * the media queries at the bottom to define further styles for larger
@@ -48,17 +51,19 @@
 * Additional media queries are at the bottom of this document
 ******************************************************************/
 .liquid-slider-wrapper {
+  position: relative;
   /* Do not edit below this line */
+
   clear: both;
   overflow: auto;
-  position: relative;
+
   padding-bottom: 20px;
 }
 
 /******************************************************
 * Main Container
 * This is the main container (minus the navigation).
-* Be sure to match the width with the .panel class, 
+* Be sure to match the width with the .panel class,
 * or it won't work properly. Also, width only applies
 * if you are not using the responsive setting.
 *
@@ -66,74 +71,78 @@
 * max width instead
 *******************************************************/
 .liquid-slider-wrapper .liquid-slider {
-  background: #f2f2f2;
-  width: 100%;
+  position: relative;
   /* Do not edit below this line */
+
   float: left;
   overflow: hidden;
-  position: relative;
+
+  width: 100%;
+
+  background: #f2f2f2;
 }
 .liquid-slider-wrapper .panel-container {
   /* Do not edit below this line */
   position: relative;
-
 }
 .liquid-slider-wrapper .liquid-slider .panel-container .fadeClass {
   /* Do not edit below this line */
   position: absolute;
-  top: 0; 
+  top: 0;
   left: 0;
+
   display: none;
 }
 
 /******************************************************
 * Panels
-* This is for the panels. If you are using the 
+* This is for the panels. If you are using the
 * responsive setting, this will act as the max-width
 * for the entire slider.
 *******************************************************/
-.liquid-slider-wrapper .liquid-slider .panel {  
-  width: 100%;
+.liquid-slider-wrapper .liquid-slider .panel {
   /* Do not edit below this line */
   display: block;
   float: left;
+
+  width: 100%;
 }
 
 /******************************************************
 * These provide a base starting point for images and
 * video. However, you will have to add more rules
-* based on the content you use. Use the @media queries 
+* based on the content you use. Use the @media queries
 * at the bottom of this file.
 *******************************************************/
-.liquid-slider-wrapper .liquid-slider .panel img{
+.liquid-slider-wrapper .liquid-slider .panel img {
   /*
   width:100%;
-  height:auto;  
+  height:auto;
   margin:0 5px;
   */
 }
 
 .liquid-slider-wrapper .liquid-slider .panel video {
   /*
-  width:100%;  
+  width:100%;
   height:auto;
   */
 }
 
 /******************************************************
-* This is mainly used to adjust the padding inside each 
+* This is mainly used to adjust the padding inside each
 * panel. If you are using the responsive setting, you
 * need to use the settings below as this will not apply.
 *******************************************************/
-.liquid-slider-wrapper .liquid-slider .panel-wrapper {  
+.liquid-slider-wrapper .liquid-slider .panel-wrapper {
   /* Do not edit below this line */
-  position:relative;
+  position: relative;
 }
 
 /*****************************************************
 * This will adjust styles for all navigation tabs
-* less of course the select box used for mobile 
-* navigation. The .current styles will apply only to 
+* less of course the select box used for mobile
+* navigation. The .current styles will apply only to
 * the current tab.
 *
 * You may use this section to create navigation for
@@ -144,10 +153,10 @@
 * .currentCrossLink refers to external crosslinking.
 *******************************************************/
 .liquid-slider-wrapper .liquid-nav a {
-  background: #66bcdf;
   -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  border-radius: 50%;
+     -moz-border-radius: 50%;
+          border-radius: 50%;
+  background: #66bcdf;
 }
 .liquid-slider-wrapper .liquid-nav a:hover {
   background: #363f48;
@@ -159,31 +168,36 @@
 .currentCrossLink {
   font-weight: bold;
 }
-.liquid-slider-wrapper .liquid-nav ul {  
+.liquid-slider-wrapper .liquid-nav ul {
+  display: block;
+  float: none !important;
   /* Do not edit below this line */
   clear: both;
-  display: block;
   overflow: hidden;
-  float: none !important;
 }
 .liquid-slider-wrapper .liquid-nav ul li {
   /* Do not edit below this line */
   display: inline-block;
-  vertical-align: top;
+
   width: 10px;
   height: 10px;
   margin: 0 2px;
+
+  vertical-align: top;
 }
 .liquid-slider-wrapper .liquid-nav ul li a {
- 
+  font-size: 0;
   /* Do not edit below this line */
+
   display: block;
   float: left;
+
   width: 10px;
   height: 10px;
+
   text-decoration: none;
+
   color: transparent;
-  font-size: 0;
 }
 /*****************************************************
 * Mobile Menu
@@ -192,89 +206,108 @@
 * box.
 *******************************************************/
 .liquid-slider-wrapper .liquid-nav {
-  overflow:hidden;
-  clear:both;
   position: absolute;
   bottom: 0;
   left: 0;
+
+  clear: both;
+  overflow: hidden;
+
   width: 100%;
-  text-align: center;
   height: 10px;
+
+  text-align: center;
 }
-.liquid-slider-wrapper .liquid-slider-select-box {  
+.liquid-slider-wrapper .liquid-slider-select-box {
+  overflow: hidden;
   /* Delete these if you want the standard select box.
      Also delete the rules below */
 
   width: 100%;
   height: 35px;
-  overflow: hidden;
+
   background: url(../img/menu.png) no-repeat right #ddd;
-  
 }
-.liquid-slider-wrapper .liquid-slider-select-box select {  
-  /* If you want the standard select box, use 
+.liquid-slider-wrapper .liquid-slider-select-box select {
+  font-size: 110%;
+  /* If you want the standard select box, use
   width:100%
   And delete the rest of the styling here */
 
   width: 150%;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance:none;
-  background: transparent;
-  font-size: 110%;
-  border: 1px solid #bbb;
   height: 35px;
-  cursor:pointer;
+
+  cursor: pointer;
+
+  border: 1px solid #bbb;
+  background: transparent;
+
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
 }
 
 /******************************************************
 * Arrows
-* This section refers to both the non-graphical and 
-* graphical navigation arrows. 
+* This section refers to both the non-graphical and
+* graphical navigation arrows.
 *
-* Some settings will be overwritten when using the 
+* Some settings will be overwritten when using the
 * responsive setting.
 *******************************************************/
-.liquid-slider-wrapper .liquid-nav-left, .liquid-slider-wrapper .liquid-nav-right {
+.liquid-slider-wrapper .liquid-nav-left,
+.liquid-slider-wrapper .liquid-nav-right {
   /* Do not edit below this line */
   float: left;
 }
-.liquid-slider-wrapper .liquid-nav-left a, .liquid-slider-wrapper .liquid-nav-right a {
-  /* non-graphical arrows */
-  background: #000;
-  color: #fff;
-  width: 100%;
+.liquid-slider-wrapper .liquid-nav-left a,
+.liquid-slider-wrapper .liquid-nav-right a {
   /* Do not edit below this line */
   display: block;
+
+  width: 100%;
+
   text-align: center;
   text-decoration: none;
+
+  color: #fff;
+  /* non-graphical arrows */
+  background: #000;
 }
-.liquid-slider-wrapper .liquid-nav-left-arrow, .liquid-slider-wrapper .liquid-nav-right-arrow {
-  cursor: pointer;
+.liquid-slider-wrapper .liquid-nav-left-arrow,
+.liquid-slider-wrapper .liquid-nav-right-arrow {
   /* Do not edit below this line */
   float: left;
+
+  cursor: pointer;
 }
-.liquid-slider-wrapper .liquid-nav-left-arrow a, .liquid-slider-wrapper .liquid-nav-right-arrow a {
+.liquid-slider-wrapper .liquid-nav-left-arrow a,
+.liquid-slider-wrapper .liquid-nav-right-arrow a {
   /* Do not edit below this line */
   display: block;
 }
-.liquid-slider-wrapper .liquid-nav-left, .liquid-slider-wrapper .liquid-nav-left-arrow {
+.liquid-slider-wrapper .liquid-nav-left,
+.liquid-slider-wrapper .liquid-nav-left-arrow {
   /* Do not edit below this line */
   clear: both;
 }
 .liquid-slider-wrapper .liquid-nav-right-arrow {
+  /* Do not edit below this line */
+  position: relative;
+
   width: 25px;
   height: 25px;
+
   background: url(../images/arrows-2.png) no-repeat top right;
-  /* Do not edit below this line */
-  position:relative;
 }
 .liquid-slider-wrapper .liquid-nav-left-arrow {
+  /* Do not edit below this line */
+  position: relative;
+
   width: 25px;
   height: 25px;
+
   background: url(../images/arrows-2.png) no-repeat top left;
-  /* Do not edit below this line */
-  position:relative;
 }
 .liquid-slider-wrapper .liquid-nav-left-arrow:hover {
   /* Left graphical arrows hover */
@@ -296,7 +329,7 @@
 
 /******************************************************
 * Responsive Styles
-* Here are the main responsive styles. This mostly 
+* Here are the main responsive styles. This mostly
 * covers the arrows, and most of the settings can be
 * applied above.
 *******************************************************/
@@ -305,41 +338,47 @@
   width: 100%;
 }
 .liquid-responsive .liquid-slider .panel .panel-wrapper {
+  position: relative;
+
   width: 245px;
   height: 185px;
-  position: relative;
 }
-.liquid-responsive .liquid-slider .panel .panel-wrapper .aside-slider-title{
-  padding: 13px 10px;
-  background-image: url(../images/bgi-black.png);
-  background-repeat: repeat;
-  background-position: 0 0;
+.liquid-responsive .liquid-slider .panel .panel-wrapper .aside-slider-title {
+  font-family: 'Trebuchet MS';
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 1.143;
+
   position: absolute;
   bottom: 0;
   left: 0;
+
   width: 225px;
-  font-size: 14px;
-  font-family: "Trebuchet MS";
-  color: rgb( 255, 255, 255 );
-  font-weight: bold;
-  line-height: 1.143;
+  padding: 13px 10px;
+
   -webkit-transition: all 200ms ease-out;
-  -moz-transition: all 200ms ease-out;
-  -ms-transition: all 200ms ease-out;
-  -o-transition: all 200ms ease-out;
-  transition: all 200ms ease-out;
+     -moz-transition: all 200ms ease-out;
+      -ms-transition: all 200ms ease-out;
+       -o-transition: all 200ms ease-out;
+          transition: all 200ms ease-out;
+
+  color: rgb( 255, 255, 255 );
+  background-image: url(../images/bgi-black.png);
+  background-repeat: repeat;
+  background-position: 0 0;
 }
 .liquid-responsive .liquid-nav-left {
   /* Left non-graphical arrows */
   /* Do not edit below this line */
   position: absolute;
-  left: 0;
   z-index: 1;
+  left: 0;
 }
 .liquid-responsive .liquid-nav-left a {
-  /* Left non-graphical arrows */
-  background: #9A9A9A;
   width: 80px;
+  /* Left non-graphical arrows */
+
+  background: #9a9a9a;
 }
 .liquid-responsive .liquid-nav-left a:hover {
   /* Left non-graphical hover */
@@ -349,13 +388,14 @@
   /* Right non-graphical arrows */
   /* Do not edit below this line */
   position: absolute;
-  right: 0;
   z-index: 1;
+  right: 0;
 }
 .liquid-responsive .liquid-nav-right a {
-  /* Right non-graphical arrows */
-  background: #9A9A9A;
   width: 80px;
+  /* Right non-graphical arrows */
+
+  background: #9a9a9a;
 }
 .liquid-responsive .liquid-nav-right a:hover {
   /* Right non-graphical arrows hover */
@@ -364,30 +404,29 @@
 .liquid-responsive .liquid-nav-left-arrow {
   /* Do not edit below this line */
   position: absolute;
-  left: 0;
   z-index: 1;
+  left: 0;
 }
 .liquid-responsive .liquid-nav-right-arrow {
   /* Do not edit below this line */
   position: absolute;
-  right: 0;
   z-index: 1;
+  right: 0;
 }
 
 /******************************************************************
 * Larger Mobile Devices
-* This is for devices like the Galaxy Note or something that's 
-* larger than an iPhone but smaller than a tablet. 
+* This is for devices like the Galaxy Note or something that's
+* larger than an iPhone but smaller than a tablet.
 ******************************************************************/
 @media only screen and (min-width: 481px) {
-  .liquid-slider-wrapper .liquid-slider .panel img{
+  .liquid-slider-wrapper .liquid-slider .panel img {
     /* Example */
     /*
     width:24%;
     margin:2px;
     */
   }
-
 }
 
 /******************************************************************
@@ -395,7 +434,7 @@
 * This will include tablets and some netbooks.
 ******************************************************************/
 @media only screen and (min-width: 768px) {
-  .liquid-slider-wrapper .liquid-slider .panel img{
+  .liquid-slider-wrapper .liquid-slider .panel img {
     /* Example */
     /*
     width:24%;
@@ -406,28 +445,24 @@
 }
 
 /******************************************************************
-* DESKTOP 
-* This is the average viewing window. So Desktops, Laptops, and 
+* DESKTOP
+* This is the average viewing window. So Desktops, Laptops, and
 * in general anyone not viewing on a mobile device. Here's where
 * you can add resource intensive styles.
 ******************************************************************/
 @media only screen and (min-width: 1030px) {
-  
-
 }
 
 /******************************************************************
-* LARGE VIEWING SIZE 
+* LARGE VIEWING SIZE
 * This is for the larger monitors and possibly full screen viewers.
 ******************************************************************/
 @media only screen and (min-width: 1240px) {
-  
-
 }
 
 /******************************************************************
 * RETINA (2x RESOLUTION DEVICES)
-* This applies to the retina iPhone (4s) and iPad (2,3) along with 
+* This applies to the retina iPhone (4s) and iPad (2,3) along with
 * other displays with a 2x resolution. You can also create a media
 * query for retina AND a certain size if you want. Go Nuts.
 ******************************************************************/
@@ -435,6 +470,4 @@
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5),
        only screen and (min--moz-device-pixel-ratio: 1.5),
        only screen and (min-device-pixel-ratio: 1.5) {
-  
-
 }

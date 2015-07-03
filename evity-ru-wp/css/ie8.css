@@ -1,14 +1,14 @@
-.single-text input[type="text"],
-.single-text input[type="email"],
-.single-text input[type="tel"]{
-	line-height: 38px;
+.single-text input[type='text'],
+.single-text input[type='email'],
+.single-text input[type='tel'] {
+  line-height: 38px;
 }
-div.portfolio-post:first-child+*,
-div.portfolio-post:first-child+*+*+*,
-div.portfolio-post:first-child+*+*+*+*+*,
-div.portfolio-post:first-child+*+*+*+*+*+*+*{
-	margin-left: 14px;
+div.portfolio-post:first-child + *,
+div.portfolio-post:first-child + * + * + *,
+div.portfolio-post:first-child + * + * + * + * + *,
+div.portfolio-post:first-child + * + * + * + * + * + * + * {
+  margin-left: 14px;
 }
-.field{
-	line-height: 40px;
+.field {
+  line-height: 40px;
 }

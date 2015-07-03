@@ -8,17 +8,17 @@ Template Name: Landing
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
-    <title><?php 
+    <title><?php
 //if(isset($_GET['mode'])) $mode = $_GET['mode'];
-if(isset($_GET['title'])) 
+if(isset($_GET['title']))
 {
-$title= $_GET['title']; 
+$title= $_GET['title'];
 if(mb_detect_encoding($title, array('windows-1251','utf-8')) != 'UTF-8') $title = iconv('windows-1251', 'utf-8', $_GET['title']);
 }
 else $title = 'Продающий лендинг';
-if(isset($_GET['caption'])) 
+if(isset($_GET['caption']))
 {
-$caption= $_GET['caption']; 
+$caption= $_GET['caption'];
 if(mb_detect_encoding($caption, array('windows-1251','utf-8')) != 'UTF-8') $caption= iconv('windows-1251', 'utf-8', $_GET['caption']);
 }
 else $caption = 'Все лучшие технологии увеличения продаж, совершенное юзабилити и полный комплекс маркетинга под ключ';
@@ -42,7 +42,7 @@ wp_title();
     	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
 	<?php wp_head();?>
-	
+
 </head>
 <body>
 	<div id="wrapper">
@@ -66,7 +66,7 @@ wp_title();
                             <li><a href="/uslugi.html">Услуги</a></li>
                             <li><a href="/zakaz-uslugi.html">Заказать сайт</a></li>
                             <li><a href="/kontaktjy.html">Контакты</a></li>
-				
+
                         </ul>
                         <div id="nav-mobile">
                         	<span class="mobilebutton"></span>
@@ -77,7 +77,7 @@ wp_title();
                                     <li><a href="/uslugi.html">Услуги</a></li>
                                     <li><a href="/zakaz-uslugi.html">Заказать сайт</a></li>
                                     <li><a href="/kontaktjy.html">Контакты</a></li>
-				
+
                                 </ul>
                             </div>
                         </div>
@@ -110,7 +110,7 @@ wp_title();
             	<a href="#" class="yellow-btn order-top-btn" id="ordernow"><span>Закажите сейчас!</span></a>
             </div>
         </section>
-        <div class="business_verh"></div>      
+        <div class="business_verh"></div>
         <section id="business_section" class="section">
             <div class="center">
                 <h2 class="collapse_title"><span>Секреты продаж</span></h2>
@@ -156,7 +156,7 @@ wp_title();
                 </div>
             </div>
         </section><!-- business_section -->
-<div class="business_niz"></div>  
+<div class="business_niz"></div>
 
         <section id="benefits_section" class="section">
             <div class="center">
@@ -254,9 +254,9 @@ wp_title();
 
                                     <div class="portfolio_item"><a href="<?php bloginfo('template_directory'); ?>/lend/slider/12.jpg" class="lbp_primary" rel="lightbox[secondary-demo]" title="<a href='http://brutalgym.ru/' target='_blank'>BrutalGym - Сеть спортивных клубов</a>"><img src="<?php bloginfo('template_directory'); ?>/lend/slider/12-thumb.jpg"></a></div>
                                 </li>
-                               
-                               
-                              
+
+
+
                             </ul>
                         </div>
                         <div class="jcarousel_controls">
@@ -306,7 +306,7 @@ wp_title();
 				})
 			</script>
         </section><!-- how-work_section -->
-         <div class="sites_verh"></div>       
+         <div class="sites_verh"></div>
         <section id="sites_section" class="section">
             <div class="center">
                 <h2><span>Тарифы</span></h2>
@@ -402,7 +402,7 @@ wp_title();
                 <div class="order_text">
                 	<p>Оставьте заявку сейчас и получите бесплатную прототипирование вашего будущего лендинга!</p>
                 </div>
-                
+
                 	<ul class="order_benefits">
                     	<li>Индивидуальный подход!</li>
                         <li>Реализация любых идей!</li>
@@ -443,7 +443,7 @@ wp_title();
 
                     <li>E-mail: <a style="color:#fff" href="mailto:manager@evity.ru">manager@evity.ru</a></li>
                 </ul>
-                
+
             </div>
         </footer>
     </div><!-- end wrapper -->
@@ -513,9 +513,9 @@ wp_title();
 <noscript><div><img src="//mc.yandex.ru/watch/29540845" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
 <!-- /Yandex.Metrika counter -->
 
-<script src="<?php bloginfo('template_directory'); ?>/lend/js/jquery.jcarousel.js"></script>
-    <script src="<?php bloginfo('template_directory'); ?>/lend/js/jquery.backstretch.min.js"></script>
-    <script src="<?php bloginfo('template_directory'); ?>/lend/js/script.js"></script>
+  <script src="<?php bloginfo('template_directory'); ?>/lend/js/jquery.jcarousel.js"></script>
+  <script src="<?php bloginfo('template_directory'); ?>/lend/js/jquery.backstretch.min.js"></script>
+  <script src="<?php bloginfo('template_directory'); ?>/lend/js/script.js"></script>
 
 </body>
 </html>
