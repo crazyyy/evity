@@ -1,0 +1,18 @@
+@charset "utf-8";
+/*
+Author: Leonid Dzyganskyy
+*/
+@import url(css/rotator.css);
+@import url(css/slider.css);
+@import url(css/styles.css);
+@import url(css/reset.css);
+
+.category-text {
+	padding-right: 15px;
+}
+.pl15 {
+	padding-left: 15px;
+}
+.pb15 {
+	padding-bottom: 15px;
+}

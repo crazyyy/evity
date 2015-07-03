@@ -1,0 +1,40 @@
+.services-post-first .services-post-title a span.min-size{
+	font-size: 26px;
+	line-height: 1.3;
+	margin-top: -2px;
+}
+.services-post-first .services-post-title a span.max-size{
+	font-size: 36px;
+	margin-top: -5px;
+}
+.services-post-third .services-post-title a{
+	line-height: 1.1;
+}
+.services-post-third .services-post-title a span{
+	margin-top: -10px;
+}
+.aside-menu .menu>li{
+	line-height: 1.3;
+}
+.cat-news-post{
+	width: 180px;
+	margin: 0 12px !important;
+	float: left;
+}
+.widgets, .widget{
+	margin-top: 0;
+	margin-bottom: 30px;
+}
+.similar-post{
+	margin: 0 10px;
+}
+.portfolio-post{
+	margin-left: 3px;
+	margin-right: 4px;
+}
+.package-of-services-post{
+	margin: 0 12px 0;
+}
+.cost-post-price{
+	line-height: 40px;
+}

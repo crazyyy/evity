@@ -1,0 +1,21 @@
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<?php
+if (isset($_POST['name'])) {$name = $_POST['name'];}
+if (isset($_POST['mail'])) {$email = $_POST['mail'];}
+if (isset($_POST['phone'])) {$phone = $_POST['phone'];}
+if (isset($_POST['sumDataall'])) {$sumDataall = $_POST['sumDataall'];}
+if (isset($_POST['area'])) {$body = $_POST['area'];}
+ 
+$address = "manager@evity.ru";
+$sub = "Заказ с сайта evity.ru";
+$mes = "Имя: $name \nE-mail: $email \nТема: $sub \nНомер телефона: $phone \nВы заказали услуг на сумму: $sumDataall руб. \nКомментарий к заказу: $body";
+$send = mail ($address,$sub,$mes,"Content-type:text/plain; charset = UTF-8\r\nFrom:$email");
+if ($send == 'true')
+{
+echo "Сообщение отправлено, теперь Вы можете вернуться обратно и продолжить работу с <a href=\"/\">evity.ru</a>";
+}
+else
+{
+echo "Сообщение не отправлено, проверьте правильность заполнения полей и попробуйте снова";
+}
+?>
