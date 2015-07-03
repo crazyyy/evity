@@ -3,7 +3,7 @@
 <head>
     <title><?php bloginfo('name'); ?> <?php wp_title(); ?></title>
     <meta charset="<?php bloginfo('charset'); ?>">
-	<!--CSS style-->
+    <!--CSS style-->
     <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" media="screen">
 	<link rel="icon" href="<?php bloginfo('template_directory'); ?>/img/favicon.png" type="image/x-icon">
 	<!--[if lt IE 9]>
@@ -13,10 +13,10 @@
 	<!--[if lt IE 8]>
 		<link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/ie7.css">
 	<![endif]-->
-    <?php wp_head(); // API Hook ?>
-    </head>
-	<body>
-	
+	<?php wp_head(); // API Hook ?>
+</head>
+<body>
+
 
     <!-- Start SiteHeart code -->
     <script>
@@ -94,7 +94,7 @@
 						<ul class="wrap">
 							<li class="calculator">
 								<a href="/kaljkulyator.html">
-									Калькулятор 
+									Калькулятор
 									<span>рассчитать стоимость</span>
 								</a>
 							</li>
